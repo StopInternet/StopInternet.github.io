@@ -1,0 +1,61 @@
+仕様書
+◎1,電卓基準のタイマー
+
+◎2,細かく設定できるように数値の入力ができるように。
+　タイムアップ音と途中経過音は同じである。
+
+◎3,n分n秒を設定することでその時間になると音がなる。
+  音はsoundフォルダ内のsound.mp3
+  sound.mp3に名前にすればいろんな音を経過音(タイムアップ音)にすることが可能である
+
+◎4,停止を押すと途中で停止することができる
+　＊中断はできないので注意
+　表示はその時の経過時間になるが計測開始を押すと、
+　指定した時間で再度計測開始になる
+
+×5,得点入力モードは、n人分の得点を入力することで平均点を算出し、
+　Excelファイル(model.xlsx)に出力される
+　グラフ化、前回からの±点を算出する
+
+
+☆計測モード☆
+
+*計測モード全般で共通することは
+計測時間を自由に設定することができる
+
+*40＆20分間計測モードでは
+経過音を鳴らすタイミングを自由に設定できる
+
+①40分間計測モード
+1.40分間の計測ができる
+2.10分毎に経過音を鳴らすように。
+3.残り0分でも音がなる
+
+②20分間計測モード
+1.40分間計測モードと似ている。
+2.10分になると経過音が鳴るように。
+3.残り0分でも音が鳴る
+
+③AOCC計測モード
+1.AOCCに対応した計測モード
+2.一番下にある○○の計測へをクリックすることで
+加減算⇒乗除算⇒見取り算⇒伝票算の順序で計測が可能である。
+
+☆グラフ表示☆
+点数をグラフ化し可視化をする。
+javascript/gurahu.jsの17行目より下を確認
+high_score,low_score,ave_scoreの各リストの
+一番下の行数に「点数,」を入力することで
+過去6回分のグラフが表示できる
+
+
+
+参考書（主にタイマーの作成のために参考にしました。）
+https://www.nagahitoyuki.com/2021/04/a-stopwatch-program-that-count-and-displays-time-in-javascript.html
+https://www.javadrive.jp/javascript/webpage/index4.html
+https://www.google.com/search?q=javascript+%E3%82%BF%E3%82%A4%E3%83%9E%E3%83%BC&rlz=1C1GCEU_jaJP849JP853&ei=AANxYZTaEozN-Qars4LICA&start=20&sa=N&ved=2ahUKEwiU2q3g6trzAhWMZt4KHauZAIk4ChDw0wN6BAgBEE4&biw=927&bih=802&dpr=0.9
+https://dev83.com/js-countdown/
+
+グラフの作成のために使用（一から作るのはほぼ無理っす）
+chart.jsより
+https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js

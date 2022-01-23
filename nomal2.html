@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang=ja>
+<head>
+<meta charset="UTF-8">
+<title>電卓計測マスター</title>
+<link rel="stylesheet" href="css/timer.css">
+<link rel="shortcut icon" href="icon.ico"> 
+</head>
+<body>
+  <header>
+    <h1>
+    <a href="main.html"><img src="images/dentaku_businesswoman.png" alt="DentakuTimer"><h1>電卓計測マスター</h1></a>
+    </h1>
+    <nav id="global">
+        <ul>
+            <li class="current"><a href="main.html">メインページ</a></li>
+            <li><a href="nomal.html">40分間計測モード</a></li>
+            <li><a href="nomal2.html">20分間計測モード</a></li>
+            <li><a href="aocc.html">AOCC計測モード</a></li>
+            <li><a href="gurahu.html">グラフ表示</a></li>
+        </ul>   
+    </nav>
+  </header>
+  <div align="center">
+      <canvas id="canvas" width="800" height="400" style="background-color: lightblue;">
+        </canvas><br>
+    　　開始<input type="text" id="min" value="20">分  <input type="text" id="sec" value="0">秒です 　　<br>
+    　　残り<input type="text" id="min_1" value="10">分 <input type="text" id="sec_1" value="0">秒で鳴らす<br>
+ <br><br>
+ 電卓20分間計測できるモードです。<br>
+ 数値を書き換えれば自由に計測時間を変えれますが<br>
+ その作業がめんどくさい人向けです。<br>
+    
+    <input type="button" id="button" value="計測開始" onclick="setTime()">
+    <input type="button" id="button" value="停止" onclick="stop()"><br><br>
+    電卓計測マスター
+  </div>
+  <audio id="thesound" preload="auto">
+    <source src="sound/sound.mp3" type="audio/mp3">
+  </audio>
+    <script type="text/javascript" src="javascript/sub.js"></script>
+</body>
+</html>

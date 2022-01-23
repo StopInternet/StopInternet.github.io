@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang=ja>
+<head>
+<meta charset="UTF-8">
+<title>電卓計測マスター</title>
+<link rel="stylesheet" href="css/timer.css">
+<link rel="shortcut icon" href="icon.ico"> 
+</head>
+<body>
+  <header>
+    <h1>
+    <a href="main.html"><img src="images/dentaku_businesswoman.png" alt="DentakuTimer"><h1>電卓計測マスター</h1></a>
+    </h1>
+    <nav id="global">
+        <ul>
+          <li class="current"><a href="main.html">メインページ</a></li>
+          <li><a href="nomal.html">40分間計測モード</a></li>
+          <li><a href="nomal2.html">20分間計測モード</a></li>
+          <li><a href="aocc.html">AOCC計測モード</a></li>
+          <li><a href="gurahu.html">グラフ表示</a></li>
+        </ul>   
+    </nav>
+  </header>
+  <h1></h1>
+  <canvas id="myLineChart"></canvas>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+  <script src="javascript/gurahu.js">
+  </script>
+  <div id="ma">
+  グラフの生成は大規模なコードになるため、<br>
+  サイトから引用をしています。<br>
+  これを1から作る、もしくは解読するには時間が足りませんう<br>
+  参照：https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js
+  <h2>点数の入力の仕方</h2>
+      excel.jsを開いてください。<br>
+      開いた後、17行目からを確認してください。<br>
+      最高点、最低点、平均点を<br>
+      各リストの「一番下」の行に入力してください。<br>
+      一番左側が新しい結果になります。<br>
+      ↓クリックすると最高点と平均点を求めます↓<br>
+      <input type="button" value="点数の入力" id="button" onclick="calc()"><br>
+  </div>
+</body>
+
+</html>
