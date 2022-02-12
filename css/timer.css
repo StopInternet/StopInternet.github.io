@@ -140,3 +140,12 @@ border-bottom: none;
 ul.cp_list li:last-of-type {
 	border-bottom: none;
 }
+
+@media screen and (max-width: 767px){
+    img {
+        max-width: 100%
+    }
+    header,#global,div{
+        width: 100%;
+    }
+}
