@@ -1,0 +1,12 @@
+html {
+    background-image: url(../images/black.jpg);
+}
+
+header{
+    width: 980px;
+    margin: 0 auto;
+}
+title {
+    float: left;
+    color: darkgoldenrod;
+}
