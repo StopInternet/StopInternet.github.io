@@ -5,8 +5,14 @@ var start_time;
 var count_time;
 var canvas = document.getElementById("canvas");
 var context = canvas.getContext("2d");
-//全体処理
+var index;
+var value;
 
+function setTemple(){
+  let element = document.getElementById('select');
+  console.log(element.value);
+  print(element.value);
+}
 //分を秒に変換
 function sumSec(m1,m2){
   var min = document.getElementById(m1).value;
@@ -23,15 +29,13 @@ function sumSec(m1,m2){
 
 //開始処理
 function setTime(){
-　count_time = [
+ count_time = [
 
 ];
-
-  fstart_time = sumSec("min", "sec");
-  count_time.push(sumSec("min_1", "sec_1"));
-  count_time.push(sumSec("min_2", "sec_2"));
-  count_time.push(sumSec("min_3", "sec_3"));
-    
+    fstart_time = sumSec("min", "sec");
+    count_time.push(sumSec("min_1", "sec_1"));
+    count_time.push(sumSec("min_2", "sec_2"));
+    count_time.push(sumSec("min_3", "sec_3"));
   start_time = new Date();
     
   //タイマーが既に動いていた場合、ストップをする

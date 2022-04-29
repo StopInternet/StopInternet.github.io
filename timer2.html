@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>タイマーサイト</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/timer.css">
+    <link rel="shortcut icon" href="icon.ico"> 
+  </head>
+  <body>
+    <header>
+      <h1>
+      <a href="main.html"><img src="images/dentaku_businesswoman.png" alt="DentakuTimer"><h1>タイマーサイト</h1></a>
+      </h1>
+      <nav id="global">
+      </nav>
+    </header>
+    <div id="ma">
+      <h2>メインページ</h2>
+      <h3>使い方</h3>
+      <ul class="cp_list" title="使い方リスト">
+        <li>時間を自由に設定できる!</li>
+        <li>最大3回まで鳴らす部分を設定できる!</li>
+        <li>多分スマホ対応!</li>
+        <li>計測開始ボタンで計測スタート!</li>
+      </ul>
+      <div align="center" id="timera">
+        <canvas id="canvas" width="800" height="400" style="background-color: aqua;" >
+          </canvas><br>
+      開始<input type="text" id="min" value="40">分  <input type="text" id="sec" value="0">秒です <br>
+      残り<input type="text" id="min_1" value="30">分 <input type="text" id="sec_1" value="0">秒で鳴らす<br>
+      残り<input type="text" id="min_2" value="20">分 <input type="text" id="sec_2" value="0">秒で鳴らす<br>
+      残り<input type="text" id="min_3" value="10">分 <input type="text" id="sec_3" value="0">秒で鳴らす
+   <br><br>
+   <input type="button" id="button" value="計測開始" onclick="setTime()">
+   <input type="button" id="button" value="停止" onclick="stop()"><br><br>
+   </div>
+    </div>
+    <audio id="thesound" preload="auto">
+      <source src="sound/sound.mp3" type="audio/mp3">
+    </audio>
+      <script type="text/javascript" src="javascript/nomal.js"></script>
+  </body>
+</html>

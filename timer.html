@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>便利屋サイト</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="shortcut icon" href="icon.ico"> 
+      </head>
+    <header>
+      <nav id="global">
+        <ul>
+            <li class="current"><a href="index.html"><img src="images/main.png">メインページ</a></li>
+            <li><a href="timer.html"><img src="images/timer.png">タイマー</a></li>
+            <li><a href="roulette.html"><img src="images/roulette.png">ルーレット</a></li>
+            <li><a href="calc.html"><img src="images/calc2.png">計算機</a></li>
+            <li><a href="code.html"><img src="images/github_icon.png">コード</a></li>
+        </ul>
+    </nav>
+    </header>
+    <div id="wrapper">
+      <div id="main">
+        <article>
+            <h1>
+            Hello World !
+            </h1>
+            <section>
+                <section id="credit">
+                <h2>
+                  ここはメインページだ
+                </h2>
+                <div align="center" id="timera">
+                    <canvas id="canvas" width="800" height="400" style="background-color: aqua;" >
+                      </canvas><br>
+                  開始<input type="text" id="min" value="30">分  <input type="text" id="sec" value="0">秒です <br>
+                  残り<input type="text" id="min_1" value="24">分 <input type="text" id="sec_1" value="0">秒で鳴らす<br>
+                  残り<input type="text" id="min_2" value="20">分 <input type="text" id="sec_2" value="0">秒で鳴らす<br>
+                  残り<input type="text" id="min_3" value="10">分 <input type="text" id="sec_3" value="0">秒で鳴らす
+               <br>             
+               <br>
+               <input type="button" id="button" value="計測開始" onclick="setTime()">
+               <input type="button" id="button" value="停止" onclick="stop()"><br><br>
+               </div>
+               テンプレートモードで開始が出来ます。<br>
+               <select name="select_mode" id="select" onchange="setTemple()">
+                <option value="1">電卓計測モード</option>
+                <option value="2">1時間計測モード</option>
+                <option value="3">C</option>
+                </select>
+                </section>
+            </section>
+        </article>
+      </div>
+      </div>
+      <audio id="thesound" preload="auto">
+        <source src="sound/sound.mp3" type="audio/mp3">
+      </audio>
+      <script type="text/javascript" src="javascript/nomal.js">
+
+      </script>
+    </body>
+
+</html>
