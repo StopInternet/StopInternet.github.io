@@ -7,7 +7,14 @@ var canvas = document.getElementById("canvas");
 var context = canvas.getContext("2d");
 var index;
 var value;
-
+/*
+50分
+60分
+90分
+120分
+150分
+180ふん
+*/
 function setTemple(){
   let element = document.getElementById('select');
   console.log(element.value);

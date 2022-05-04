@@ -12,7 +12,7 @@
         <ul>
             <li class="current"><a href="index.html"><img src="images/main.png">メインページ</a></li>
             <li><a href="timer.html"><img src="images/timer.png">タイマー</a></li>
-            <li><a href="random.html"><img src="images/roulette.png">ルーレット</a></li>
+            <li><a href="roulette.html"><img src="images/roulette.png">ルーレット</a></li>
             <li><a href="calc.html"><img src="images/calc2.png">計算機</a></li>
             <li><a href="code.html"><img src="images/github_icon.png">コード</a></li>
         </ul>
@@ -27,26 +27,22 @@
             <section>
                 <section id="credit">
                 <h2>
-                  タイマー
+                  ここはメインページだ
                 </h2>
-                <h3>使い方</h3><br>
-                ①開始～分の部分に制限時間（分）を入力します<br>
-                ②「残り～分～秒で鳴らす」部分は、残り○○分で経過音を鳴らしたい場合、入力します<br>
-                ③入力が終えたら計測開始ボタンを押すとカウントダウンされます<br>
-                注意：スマホには対応していません。
                 <div align="center" id="timera">
                     <canvas id="canvas" width="800" height="400" style="background-color: aqua;" >
                       </canvas><br>
-                  開始<input type="text" id="min" value="0">分  <input type="text" id="sec" value="0">秒です <br>
-                  残り<input type="text" id="min_1" value="0">分 <input type="text" id="sec_1" value="0">秒で鳴らす<br>
-                  残り<input type="text" id="min_2" value="0">分 <input type="text" id="sec_2" value="0">秒で鳴らす<br>
-                  残り<input type="text" id="min_3" value="0">分 <input type="text" id="sec_3" value="0">秒で鳴らす
+                  開始<input type="text" id="min" value="40">分  <input type="text" id="sec" value="0">秒です <br>
+                  残り<input type="text" id="min_1" value="30">分 <input type="text" id="sec_1" value="0">秒で鳴らす<br>
+                  残り<input type="text" id="min_2" value="20">分 <input type="text" id="sec_2" value="0">秒で鳴らす<br>
+                  残り<input type="text" id="min_3" value="10">分 <input type="text" id="sec_3" value="0">秒で鳴らす
                <br>             
                <br>
                <input type="button" id="button" value="計測開始" onclick="setTime()">
                <input type="button" id="button" value="停止" onclick="stop()"><br><br>
                </div>
-
+               テンプレートモードで開始が出来ます。<br>
+                <a href="timer_dentaku.html">   電卓計測</a>
                 </section>
             </section>
         </article>
@@ -55,7 +51,7 @@
       <audio id="thesound" preload="auto">
         <source src="sound/sound.mp3" type="audio/mp3">
       </audio>
-      <script type="text/javascript" src="javascript/timer.js">
+      <script type="text/javascript" src="javascript/nomal.js">
 
       </script>
     </body>
