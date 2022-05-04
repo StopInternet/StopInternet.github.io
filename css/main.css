@@ -111,41 +111,8 @@ p{
     line-height: 1.6;
 
 }
-/*Sidebanner*/
-
-#side_banner {
-    margin-bottom: 30px;
-}
-
-#side_banner h2 {
-    background-color: black;
-    color: white;
-    padding: 7px;
-    font-size: 14px;
-    text-align: center;
-}
-
-#side_banner ul {
-    list-style: none;
-    margin:0;
-    padding: 0;
-}
-
-#side_banner ul li {
-    margin-bottom: 10px;
-}
-#side_contact{
-    margin-bottom: 30px;
-}
-
-#side_contact{
-    border: 1px solid #b7a077;
-    color: white;
-    text-align: cneter;
-}
-
 article{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(233, 233, 233);
     text-align: center;
     list-style:none;
 }
@@ -206,14 +173,16 @@ article.listScroll{
   .calculator_area{
     height: 600px;
     width: 400px;
-    border: solid 3px #000000;
+    border: solid 3px lightblue;
+    margin-left: 300px;
+    
   }
   
   .calc_area{
     height: 60px;
     width: 300px;
-    border: solid 3px #000000;
-    margin-left:40px;
+    border: solid 3px red;
+    margin-left: 40px;
     margin-top: 20px;
   }
   
@@ -239,10 +208,10 @@ article.listScroll{
     margin-left:23px;
     border: solid 3px #000000;
     text-align:center;
-    background-color: #000000;
+    background-color: rgb(168, 209, 55);
   }
   .button_text{
     text-align:center;
     font-weight: bold;
-    color: #ffffff;
+    color: #000000;
   }
