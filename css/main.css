@@ -1,5 +1,4 @@
 @charset "uft-8";
-@media screen and (min-width: 500px) and (max-width: 999px) {
 /*全体画像の設定*/
 html {
     background-image: url(../images/black.jpg);
@@ -216,4 +215,8 @@ article.listScroll{
     font-weight: bold;
     color: #000000;
   }
-}
+
+  @media screen and (min-width: 500px) and (max-width: 999px) {
+      
+  }
+  
